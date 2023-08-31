@@ -5,6 +5,12 @@
 [[trained models](...)]
 [[dataset](...)]
 
+# TODO:
+- [ ] ACANet files
+- [ ] Other models files
+- [ ] Demo on images
+- [ ] Complete missing parts of README.md
+ 
 ## Table of Contents
 
 1. [Installation](#installation)
