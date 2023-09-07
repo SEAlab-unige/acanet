@@ -50,7 +50,7 @@ The models testing were performed using the following setup:
 To run the models and visualise the output:
 
     python3 test_main_<model_name>.py --data_dir=DATA_DIR --checkpoint_path=CHECKPOINT_PATH --visualise_overlay=True
-* Replace *<model_name>* with one among *drnatt*, *rn18u*, *rn50f*, *rn18u_fusion*
+* Replace *<model_name>* with one among *drnatt*, *rn18u*, *rn50f*, *acanet*
 * *DATA_DIR*: directory where data are stored, with the structure `DATA_DIR/rgb`
 * *CHECKPOINT_PATH*: path to the .pth file
 
