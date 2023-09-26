@@ -2,14 +2,7 @@
 
 [[arXiv](https://arxiv.org/abs/2308.11233v1)] 
 [[webpage](https://apicis.github.io/projects/acanet.html)]
-[[trained models](https://doi.org/10.5281/zenodo.8364196)]
-
-# TODO:
-- [x] ACANet files
-- [x] Demo on images
-- [ ] Other models files
-- [ ] Dataset setup and scripts
-- [ ] Complete missing parts of README.md
+[[trained model](https://doi.org/10.5281/zenodo.8364196)]
  
 ## Table of Contents
 
@@ -75,7 +68,10 @@ python3 demo.py --model_name=MODEL_NAME --data_dir=DATA_DIR  --checkpoint_path=C
 You can test if the model has the same performance by running inference on the images provided in *test_dir/rgb* and checking if the output is the same of *test_dir/pred* .
 
 ## Training and testing data <a name="data"></a>
-If you want to train or test your own model, you can download the mixed-reality [dataset](https://doi.org/10.5281/zenodo.5085800) used in the paper.
+To recreate the training and testing splits of the mixed-reality dataset:
+1. Download the [dataset](https://doi.org/10.5281/zenodo.5085800) folders *rgb*, *mask*, *annotations*, *affordance* and unzip them in the preferred folder *SRC_DIR*.
+2.  Run ```utils/split_dataset.py --src_dir=SRC_DIR --dst_dir=DST_DIR``` to split into training, validation and testing sets. *DST_DIR* is the directory where splits are saved.
+3. Run ```utils/create_dataset_crops.py --data_dir=DATA_DIR --save=True --dest_dir=DEST_DIR``` to perform the cropping window procedure described in the paper. This script performs also the union between the arm mask and the affordance masks. *DATA_DIR* is the directory containing the *rgb* and *affordance* folders e.g.  *DST_DIR/training* following the naming used for the previous script. *DEST_DIR* is the destination directory, where to save cropped rgb images, and segmentation masks. 
 
 ## Enquiries, Question and Comments <a name="enquiries-question-and-comments"></a>
 

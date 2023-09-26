@@ -1,4 +1,4 @@
-""" This file contains the class of ACANet, proposed by Apicella et al., in "Affordance segmentation of hand-occluded containers from exocentric images".
+""" This file contains the class of ACANet, proposed by Apicella et al., in "Affordance segmentation of hand-occluded containers from exocentric images", IEEE/CVF ICCVW 2023.
     ACANet is an Affordance segmentation model that uses auxiliary branches to focus on the object and hand regions separately.
     The model learns affordance features under hand-occlusion by weighting the feature map through hand and object segmentation. """
 
