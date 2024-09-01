@@ -3,6 +3,8 @@
 [[arXiv](https://arxiv.org/abs/2308.11233v1)] 
 [[webpage](https://apicis.github.io/projects/acanet.html)]
 [[trained model](https://doi.org/10.5281/zenodo.8364196)]
+[[mixed-reality data](https://doi.org/10.5281/zenodo.5085800)]
+[[real testing data](https://doi.org/10.5281/zenodo.10708553)]
  
 ## Table of Contents
 
